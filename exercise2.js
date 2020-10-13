@@ -1,7 +1,17 @@
+let Name;
+let charName;
+let Surname;
+let charSurname;
+function Names()
+{
+    Name = prompt("What is your name?").toUpperCase();
+    charName = Name.split('');
+    Surname = prompt("What is your surname?").toUpperCase();
+    charSurname = Surname.split('');
+}
 function fase123()
 {
-    let Name = prompt("What is your name?").toUpperCase();
-    let charName = Name.split('');
+    Names();
     let Vocals = ['A', 'E', 'I', 'O', 'U'];
     let Numbers = ['0','1','2','3','4','5','6','7','8','9'];
     let k = 0;
@@ -35,10 +45,7 @@ function fase123()
 }
 function fase4()
 {
-    let Name = prompt("What is your name?").toUpperCase();
-    let charName = Name.split('');
-    let Surname = prompt("What is your surname?").toUpperCase();
-    let charSurname = Surname.split('');
+    Names();
     let fullName = [];
     countName = 0;
     // We can iterate with a while declaring a variable to count before or
